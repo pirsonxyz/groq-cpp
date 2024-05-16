@@ -9,5 +9,5 @@ link_libraries(cpr)
 add_executable(groq_cpp
         nlohmann/json.hpp
         groqapi.cpp
-        groqapi.h
+        groqapi.hpp
 )

@@ -1,7 +1,7 @@
 #include "nlohmann/json.hpp"
 #include <format>
 #include <cpr/cpr.h>
-#include "groqapi.h"
+#include "groqapi.hpp"
 using json = nlohmann::json;
 
 std::string createChatCompletion(const std::string& prompt, const std::string& model, std::string api_key) {
