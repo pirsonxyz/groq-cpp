@@ -19,7 +19,7 @@ std::string createChatCompletion(const std::string& prompt, const std::string& m
         json response = json::parse(r.text);
         std::string text = response["choices"][0]["message"]["content"];
         return text;
-    } else {
-        return "Invalid Model!";
     }
+    return "Invalid Model!";
+
 }
